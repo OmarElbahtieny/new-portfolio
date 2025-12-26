@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mersal Charity - 10 Years Project</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    /* Colors */
+    :root {
+      --gold: #F2BC2B;
+      --turquoise: #1AA39A;
+      --lightgreen: #7FAEAB;
+      --white: #FFFFFF;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--white);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Sidebar */
+    #sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      background-color: var(--turquoise);
+      color: var(--white);
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    #sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: var(--gold);
+    }
+
+    #sidebar a {
+      display: block;
+      color: var(--white);
+      padding: 10px 15px;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+
+    #sidebar a:hover,
+    #sidebar a.active {
+      background-color: var(--gold);
+      color: var(--turquoise);
+      text-decoration: none;
+    }
+
+    /* Main content */
+    main {
+      margin-left: 270px;
+      padding: 30px;
+    }
+
+    section h2 {
+      color: var(--turquoise);
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .portfolio-slider img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    .team-member img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: var(--lightgreen);
+      color: var(--white);
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--turquoise);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <h2>Mersal Charity</h2>
+    
+    <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    
+    <div class="profile-img">
+      <img src="assets\img\Omar1.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Omar.Essa</h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#Skills"><i class="bi bi-hdd-stack navicon"></i> Skills</a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="index.html#testimonials"><i class="bi bi-hdd-stack navicon"></i> Testimonials</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>    
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Project Info -->
+    <section id="project-info">
+      <h2>Project Information</h2>
+      <ul>
+        <li><strong>Category:</strong> Creating a unified database  </li>
+        <li><strong>Client:</strong> Mersal Charity</li>
+        <li><strong>Duration:</strong> 10 months</li>
+        <li><strong>Team:</strong> 1 Project Manager, 1 Data Analyst,6 Data Entry Specialists</li>
+        <li><strong>Tools & Technologies:</strong> Excel & Google Sheet, SQL, Power BI</li>
+        <li><strong>Project Link:</strong> <a href="https://www.linkedin.com/in/omar-elbahtieny-27352a229/details/projects/">View Project</a></li>
+      </ul>
+    </section>
+ <!-- Project Overview -->
+     <p><strong>
+This page presents a high-level overview of the project. Due to data privacy, confidentiality policies, and the protection of Mersal Charity’s information, full project details and actual dashboard visuals cannot be publicly shared.      
+     </strong></p>
+    <!-- Image Slider -->
+    <section class="portfolio-slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets\img\portfolio\10years mersal\لقطة شاشة 2025-12-25 174155.png" alt="Data Modeling Screenshot"></div>
+          <div class="swiper-slide"><img src="assets\img\portfolio\10years mersal\mersal.jpg" alt="Data Modeling Screenshot"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+   
+    <!-- Project Overview -->
+    <section id="project-overview">
+      <h2>Project Overview</h2>
+      <p>
+        The project was designed to not only consolidate over 10 years of historical files for Mersal Charity but also to create a comprehensive, unified database that enables generating reports in real-time and in any required format. By linking files across all departments, the database allows for instant cross-referencing, data-driven insights, and seamless operational monitoring. This integration ensures that information from different divisions, including operational logs, medical services, social services, can be accessed and analyzed cohesively.
+      </p>
+      <p>
+        The work included organizing files into standardized templates, cleaning duplicates and errors, completing missing data,
+        and resolving inconsistencies. Each file was meticulously reviewed against system logs and official approvals.
+      </p>
+      <p>
+Special acknowledgment goes to Mr. Mamdouh Yassin, the Director of the Information Center, whose guidance and oversight were instrumental in aligning the project with the charity’s operational and strategic objectives. The combined effort of leadership and the data entry team was crucial to overcome the complexities of long-term data consolidation, enabling Mersal Charity to now rely on a unified, high-quality database for reporting, analysis, and decision-making.      </p>
+    </section>
+
+    <!-- Files List -->
+    <section id="files-list">
+      <h2>Files by Department</h2>
+      <ul>
+        <li><strong>Follow-up:</strong> Medical Procedures, Medical Supplies, Physical Therapy & Speech Therapy, Dialysis Sessions, Emergency Booking Cases, Surgical Procedures, Emergency Medical Services, Medical Tests, Medical Examinations, Medications</li>
+        <li></strong>Medical Services:</strong> Neonatal Care Units (Nurseries), Outpatient Clinics, Ambulance Services, Nursing & Home Healthcare Services, Nursing Home Visits, Home-Based Physical Therapy, Physical Therapy Services, Speech Therapy Services</li>
+        <li></strong>Oncology Department:</strong> Oncology Services</li>
+        <li></strong>Social Care Department:</strong> Social unrest, PKU, Guest House & Patient Accommodation</li>
+        <li></strong>Medical Administration:</strong> Psychiatric Medications, Genetic Therapy, Psychiatric Treatment Sessions, Medical Facility & Clinic Booking, National Oncology Institute Coordination, Pre-Medical Tests & Diagnostic Offers, Medical Case Classification</li>
+        <li></strong>Special & Strategic Files:</strong> Family Support & Case Formation, Financial Budget Files, Official Approvals, Executive & Medical Decisions</li>
+      </ul>
+    </section>
+
+    <!-- Team Members -->
+    <section id="team-members">
+      <h2>Project Team</h2>
+       <p>
+The success of this project relied heavily on a dedicated team of data entry specialists, consisting of six skilled professionals who worked consistently over the course of the project. Their meticulous attention to detail and commitment to accuracy ensured that all files were properly cleaned, standardized, and integrated into the new system.
+      </p>
+      <ul>
+        <li>Project Manager: <a href="https://www.linkedin.com/in/mamdouh-yasin-bb9b1b168/" target="_blank">Mr. Mamdouh Yassin</a></li>
+        <li>Data Analyst: <a href="https://www.linkedin.com/in/example" target="_blank">Omar Essa</a></li>
+        <li>Coordinator: <a href="https://www.linkedin.com/in/example" target="_blank">Khloud Abdelhameed</a></li>
+        <li>Data Entry: <a href="https://www.linkedin.com/in/abdulrahman-nader/" target="_blank">Abdulrahman Nader</a></li>
+        <li>Data Entry: <a href="https://www.linkedin.com/in/shaimaaabughazy/" target="_blank">Shaimaa Magdy</a></li>
+        <li>Data Entry: <a href="https://www.linkedin.com/in/omar-abdelaziz-8b2996356/" target="_blank">Omar Abdelaziz</a></li>
+        <li>Data Entry: <a href="https://www.linkedin.com/in/nadia-diab-033313297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Nadia Diab</a></li>
+        <li>Data Entry: <a href="https://www.linkedin.com/in/example" target="_blank">Sajdaa Abdelnasser</a></li>
+        <li>Data Entry: <a href="https://www.linkedin.com/in/example" target="_blank">Amina Wageeh</a></li>
+        <li>Data analysis trainee: <a href="https://www.linkedin.com/in/omar-shoman/" target="_blank">Omar Shoman</a></li>
+        <li>Data analysis trainee: <a href="https://www.linkedin.com/in/ziad-taha-/" target="_blank">Ziad Taha</a></li>
+        <li>Data analysis trainee: <a href="https://www.linkedin.com/in/nada-abd-elnaser/" target="_blank">Nada Abdelnaser</a></li>
+      </ul>
+    </section>
+
+    <!-- Team Members -->
+    <section id="skills" class="skills-section">
+       <h2 class="section-title">Skills & Tools</h2>
+
+       <div class="skills-grid">
+
+       <!-- Row 1: Core Tools -->
+      <div class="skill-box">
+         <h4>Microsoft Excel (Advanced)</h4>
+        <p>Advanced formulas, Pivot Tables, Power Query, large datasets handling</p>
+       </div>
+
+       <div class="skill-box">
+        <h4>Power BI</h4>
+        <p>Interactive dashboards, DAX basics, data modeling, reporting</p>
+       </div>
+
+      <div class="skill-box">
+        <h4>Google Sheets</h4>
+        <p>Long-term data tracking, collaboration, dynamic formulas</p>
+      </div>
+
+      <!-- Row 2: Data & Databases -->
+      <div class="skill-box">
+        <h4>SQL (Basic)</h4>
+        <p>Data extraction, filtering, joins, preparing datasets for analysis</p>
+      </div>
+
+      <div class="skill-box">
+        <h4>Python (Pandas & NumPy)</h4>
+        <p>Data cleaning, transformation, exploratory analysis</p>
+      </div>
+
+      <div class="skill-box">
+        <h4>Data Modeling</h4>
+        <p>Structuring datasets, relationships, preparing data for BI tools</p>
+      </div>
+
+      <!-- Row 3: Analytical Skills -->
+      <div class="skill-box">
+        <h4>Data Cleaning & Validation</h4>
+        <p>Handling missing data, duplicates, inconsistencies</p>
+      </div>
+
+      <div class="skill-box">
+        <h4>Exploratory Data Analysis (EDA)</h4>
+        <p>Identifying trends, patterns, and insights</p>
+      </div>
+
+         <div class="skill-box">
+         <h4>Reporting & Insights</h4>
+         <p>Turning data into clear, actionable business insights</p>
+        </div>
+
+       </div>
+      </div>
+    </section>
+
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <ol>
+        <li>Establish a centralized and unified database to ensure consistent data access across all departments and services.</li>
+        <li>Use the centralized database for analytical reporting and strategic decision-making.</li>
+        <li>Standardize data entry templates and reporting formats to reduce inconsistencies and improve data quality.</li>
+        <li>Implement clear data governance policies to define ownership, validation rules, and approval workflows.</li>
+        <li>Automate recurring reports to reduce manual effort and ensure timely availability of insights.</li>
+        <li>Strengthen data validation processes at the point of data entry to minimize errors and missing values.</li>
+        <li>Maintain regular data audits to ensure long-term accuracy, traceability, and compliance.</li>
+        <li>Enhance integration between operational systems and analytical platforms to enable real-time or near real-time reporting.</li>
+        <li>Develop role-based dashboards tailored to management, medical teams, and operational staff.</li>
+        <li>Invest in continuous training for staff involved in data entry and reporting to ensure consistency and accuracy.</li>
+        <li>Document all data sources, definitions, and business rules to create a reliable data dictionary.</li>
+        <li>Encourage cross-department collaboration to improve data completeness and reduce information silos.</li>
+        <li>Leverage historical data to support strategic planning, forecasting, and trend analysis.</li>
+        <li>Implement backup and version control mechanisms to protect historical and critical datasets.</li>
+        <li>Ensure data privacy and security standards are consistently applied across all systems and reports.</li>
+        <li>Align analytical outputs with organizational goals to maximize business and healthcare impact.</li>
+        <li>Continuously refine dashboards based on stakeholder feedback to improve usability and relevance.</li>
+      </ol>
+    </section>
+
+    <!-- Stats -->
+    <section id="stats" class="text-center">
+      <div class="stats-item">
+        <i class="bi bi-clock-fill"></i>
+        <h3>10 Years</h3>
+        <p>Historical Data Management</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mersal Charity. All Rights Reserved. | Designed by BootstrapMade</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: { delay: 4000 },
+      pagination: { el: ".swiper-pagination", clickable: true },
+      slidesPerView: 1,
+    });
+
+    // Active link highlighting
+    const sidebarLinks = document.querySelectorAll('#sidebar a');
+    window.addEventListener('scroll', () => {
+      let scrollPos = window.scrollY + 100;
+      sidebarLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute('href'));
+        if (section && section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
+          sidebarLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
