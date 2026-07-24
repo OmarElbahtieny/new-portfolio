@@ -1274,3 +1274,57 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/*--------------------------------------------------------------
+--------------------------------------------------------------*/
+
+.gallery-cover{
+    max-width:900px;
+    margin:auto;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.gallery-cover img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    transition:.5s;
+    display:block;
+}
+
+.gallery-cover:hover img{
+    transform:scale(1.05);
+}
+
+.gallery-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.45);
+    color:#fff;
+    opacity:0;
+    transition:.4s;
+}
+
+.gallery-cover:hover .gallery-overlay{
+    opacity:1;
+}
+
+.gallery-overlay i{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.gallery-overlay h3{
+    color:#fff;
+    margin-bottom:8px;
+}
+
+.gallery-overlay span{
+    font-size:18px;
+}
