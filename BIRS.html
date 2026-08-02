@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity </title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    /* Colors */
+    :root {
+      --gold: #F2BC2B;
+      --turquoise: #001F3F;
+      --lightgreen: #001F3F;
+      --white: #FFFFFF;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--white);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Sidebar */
+    #sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      background-color: var(--turquoise);
+      color: var(--white);
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    #sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: var(--gold);
+    }
+
+    #sidebar a {
+      display: block;
+      color: var(--white);
+      padding: 10px 15px;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+
+    #sidebar a:hover,
+    #sidebar a.active {
+      background-color: var(--gold);
+      color: var(--turquoise);
+      text-decoration: none;
+    }
+
+    /* Main content */
+    main {
+      margin-left: 270px;
+      padding: 30px;
+    }
+
+    section h2 {
+      color: var(--turquoise);
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .portfolio-slider img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    .team-member img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: var(--lightgreen);
+      color: var(--white);
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--turquoise);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <h2> Care Link </h2>
+    
+    <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    
+    <div class="profile-img">
+      <img src="assets\img\Omar1.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Omar.Essa</h1>
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>             <li><a href="#gallery"><i class="bi bi-images navicon"></i><span>Professional Moments</span></a></li>        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#Skills"><i class="bi bi-hdd-stack navicon"></i> Skills</a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="index.html#testimonials"><i class="bi bi-hdd-stack navicon"></i> Testimonials</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>    
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Project Info -->
+    <section id="project-info">
+      <h2>Project Information</h2>
+      <ul>
+        <li><strong>Category:</strong> Beneficiary Information Retrieval System (BIRS)  </li>
+        <li><strong>Client:</strong>  Charity, Call Center </li>
+        <li><strong>Duration:</strong> 15 Hours </li>
+        <li><strong>Tools & Technologies:</strong> Excel & Power BI</li>
+      </ul>
+    </section>
+ <!-- Project Overview -->
+     <p><strong>
+This page presents a high-level overview of the project. Due to data privacy, confidentiality policies, and the protection of Charity’s information, full project details.      
+     </strong></p>
+    <!-- Image Slider -->
+    <section class="portfolio-slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="D:\Data\portfolio\new-portfolio\assets\img\portfolio\call center 2.png" alt="Data Modeling Screenshot"></div>
+          <div class="swiper-slide"><img src="D:\Data\portfolio\new-portfolio\assets\img\portfolio\call center.png" alt="Data Modeling Screenshot"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+   
+    <!-- Project Overview -->
+    <section id="project-overview">
+      <h2>Project Overview</h2>
+      <p>
+       This project is a Unified Beneficiary Search System developed using Power BI to support Call Center and Operations teams in quickly retrieving beneficiary information from a centralized database.
+
+The dashboard was designed to allow users to search for a beneficiary using any available identifier, including phone number, mobile number, beneficiary name, national ID, case code, UNHCR file number, or UNHCR card number. Once a match is found, all relevant beneficiary details are displayed instantly in a single interface.
+
+The solution streamlines the search process, reduces response time, and eliminates the need to navigate multiple systems, enabling customer service representatives to provide faster and more accurate support.
+ </section>
+
+ <!-- Data Privacy Notice -->
+    <section id="Data Privacy Notice">
+      <h2>Data Privacy Notice</h2>
+      <p>All names, phone numbers, national IDs, case codes, organization names, and other sensitive information shown in this project have been replaced with fictional (Dummy) data for demonstration purposes. The original dashboard design and functionality have been preserved while protecting the privacy of the organization and its beneficiaries.
+ </section>
+
+    <!-- My Role -->
+    <section id="files-list">
+      <h2>My Role</h2>
+      <ul>
+        <li> Data cleaning and validation using Microsoft Excel.</li>
+        <li>Identifying and resolving data quality issues.</li>
+        <li>Data transformation using Power Query.</li>
+        <li>Building the data model in Power BI.</li>
+        <li>Designing the unified search interface.</li>
+        <li>Developing an operational dashboard optimized for Call Center users.</li>
+        <li>Improving the user experience by enabling searches through multiple identifiers.</li>
+
+    </section>
+
+    
+ <!-- Workflow -->
+    <section id="Workflow">
+      <h2>Workflow</h2>
+     <li>The project started with a master file containing all registered case codes. The data entry team created family profiles by extracting information from supporting documents such as national ID cards, birth certificates, and other social documents.</li>
+     <li>My role was to clean, validate, and analyze the data using Microsoft Excel, identify and correct data quality issues, then transform the dataset using Power Query before building the data model in Power BI.</li>
+     <li>Based on feedback from the Call Center team, I developed a unified search interface that allows agents to locate a beneficiary using any available information, including Phone Number, Mobile Number, Beneficiary Name, Case Code, National ID, UNHCR File Number, or UNHCR Card Number. Once a match is found, all beneficiary details are displayed instantly in a single view, eliminating the need to search across multiple systems.</li>
+
+      </section>
+
+    <!-- Team Members -->
+  
+    <section id="skills" class="skills-section">
+       <h2 class="section-title">Skills & Tools</h2>
+
+       <div class="skills-grid">
+
+       <!-- Row 1: Core Tools -->
+      <div class="skill-box">
+         <h4>Microsoft Excel (Advanced)</h4>
+        <p>Advanced formulas, Pivot Tables, Power Query, large datasets handling</p>
+       </div>
+
+       <div class="skill-box">
+        <h4>Power BI</h4>
+        <p>Interactive dashboards, DAX basics, data modeling, reporting</p>
+       </div>
+
+      <!-- Row 3: Analytical Skills -->
+      <div class="skill-box">
+        <h4>Data Cleaning & Validation</h4>
+        <p>Handling missing data, duplicates, inconsistencies</p>
+      </div>
+
+      <div class="skill-box">
+        <h4>Exploratory Data Analysis (EDA)</h4>
+        <p>Identifying trends, patterns, and insights</p>
+      </div>
+
+         <div class="skill-box">
+         <h4>Reporting & Insights</h4>
+         <p>Turning data into clear, actionable business insights</p>
+        </div>
+
+       </div>
+      </div>
+    </section>
+
+
+    <!-- Stats -->
+    <section id="stats" class="text-center">
+      <div class="stats-item">
+        <i class="bi bi-clock-fill"></i>
+        <h3>BIRS</h3>
+        <p>Beneficiary Information Retrieval System</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© Charity . All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: { delay: 4000 },
+      pagination: { el: ".swiper-pagination", clickable: true },
+      slidesPerView: 1,
+    });
+
+    // Active link highlighting
+    const sidebarLinks = document.querySelectorAll('#sidebar a');
+    window.addEventListener('scroll', () => {
+      let scrollPos = window.scrollY + 100;
+      sidebarLinks.forEach(link => {
+        const section = document.querySelector(link.getAttribute('href'));
+        if (section && section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
+          sidebarLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
